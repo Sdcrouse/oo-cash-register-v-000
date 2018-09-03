@@ -33,6 +33,7 @@ class CashRegister
   def void_last_transaction 
     # Maybe make this better by extending it to reverse more than one previous transaction
     self.total -= last_transaction_amount
+    
     # Another note: I refactored this to also remove the last transaction's items from @items.
     self.last_item_quantity.times do 
       self.items.pop
