@@ -33,7 +33,7 @@ class CashRegister
     end
   end
   
-  def void_last_transaction 
+  def void_last_transaction # Note that this does not work after #apply_discount is used!
     # Maybe make this better by extending it to reverse more than one previous transaction
     self.total -= self.last_transaction_amount
     
