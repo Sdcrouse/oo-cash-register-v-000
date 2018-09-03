@@ -7,7 +7,7 @@ class CashRegister
     @total = 0 
     @discount = discount
     @items = []
-    @last_transaction_amount = 0
+    @last_transaction_price = 0
     @last_item_quantity = 0
   end
   
