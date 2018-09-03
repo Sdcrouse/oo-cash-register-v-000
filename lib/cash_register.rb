@@ -11,9 +11,13 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     self.total += price * quantity
     
-    quantity.times do 
-      self.items << item
-    end
+    # This works:
+    #quantity.times do 
+    #  self.items << item
+    #end
+    
+    # But so does this, strangely enough:
+    (self.items << item) * quantity
     
   end
   
