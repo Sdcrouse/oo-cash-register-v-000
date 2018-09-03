@@ -11,14 +11,12 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     self.total += price * quantity
     
-    # This works:
-    #quantity.times do 
-    #  self.items << item
-    #end
+    quantity.times do 
+      self.items << item
+    end
     
-    # But so does this, strangely enough:
-    (self.items << item) * quantity
-    
+    # This RETURNS the same as above, but it only adds item to @items ONCE:
+    # (self.items << item) * quantity
   end
   
   def apply_discount 
