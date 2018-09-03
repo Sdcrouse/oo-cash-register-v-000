@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :last_transaction_price, :last_item_quantity
   attr_reader :items
@@ -43,4 +43,4 @@ class CashRegister
     end
   end
 end
-binding.pry
+#binding.pry
