@@ -30,6 +30,7 @@ class CashRegister
   end
   
   def void_last_transaction 
+    # Maybe make this better by extending it to reverse more than one previous transaction
     self.total -= last_transaction_amount
   end
   
